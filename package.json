@@ -1,0 +1,25 @@
+{
+  "name": "ifc-viewer",
+  "homepage": "https://github.com/jumanahhhh/ifc-viewer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "three": "^0.152.2",
+    "vite": "^6.1.1",
+    "web-ifc-three": "^0.0.126"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}

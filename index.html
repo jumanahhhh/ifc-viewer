@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Viewer - Bring Your Vision to Life</title>
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Bring Your Vision to Life in 3D</h1>
+    <p>Upload your construction models and experience immersive visualization like never before.</p>
+  </header>
+
+  <div id="upload-screen">
+    <h2>Drop your 3D files (.IFC) and watch them come to life!</h2>
+    <label for="file-input" class="file-label">Upload File</label>
+    <input type="file" id="file-input" accept=".ifc" hidden>
+  </div>
+
+  <div id="loader" class="hidden">
+    <div class="spinner"></div>
+    <p>Loading model...</p>
+  </div>
+
+  <div id="viewer-screen" class="hidden">
+    <div id="three-canvas-container"></div>
+  </div>
+  <div id="component-list">
+    <h3>Model Components</h3>
+    <ul id="components"></ul>
+  </div>
+  <footer>
+    <p>Created by Jumanah | <a target="_blank" href="https://jumanahhhh.github.io/portfolio/">Contact</a></p>
+  </footer>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
+
